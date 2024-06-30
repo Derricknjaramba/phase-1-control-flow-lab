@@ -4,11 +4,12 @@ if(scuberGreetingForFeet<=400){
   console.log("This one is o me");
 }
 let scuberGreetingForFeet=1500;
-if(scuberGreetingForFeet>2000){
+else if(scuberGreetingForFeet>2000)
+{
   console.log("i will gladly take your thirty bucks");
 }
 let scuberGreetingForFeet=2501;
-if(scuberGreetingForFeet> 2500)
+else if(scuberGreetingForFeet> 2500)
   [
     console.log('Ok, sounds good.')
   ]
@@ -16,26 +17,22 @@ if(scuberGreetingForFeet> 2500)
 
 function ternaryCheckCity(){
 let city=NYC;
-if(city=NYC){
-  console.log("Ok ,sounds good");
-}
-let city=Pittsburgh;
-if (city!=NYC){
-  console.log("No go");
-}
+city=NYC ? "Ok, sounds good.": "No go.";
 }
 
 function switchOnCharmFromTip(){
 let switchOnCharmFromTip="generous";
-if(switchOnCharmFromTip=generous){
-  console.log("Thank you so much");
+let output;
+switch (switchOnCharmFromTip){
+  case generous:
+    output="Thank you so much";
+    break;
+    case not as generous:
+      output="Thank you";
+      break;
+      case thanks for everything:
+        output="Bye";
+        break;
+    
 }
-let switchOnCharmFromTip="not as generous";
-if(switchOnCharmFromTip=not as generous){
-  console.log("Thank you");
-}
-let switchOnCharmFromTip="thanks for everything";
-  if(switchOnCharmFromTip=thanks for everything){
-    console.log("Bye");
-  }
 }
