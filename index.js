@@ -1,38 +1,38 @@
-function scuberGreetingForFeet(){
-let scuberGreetingForFeet=199;
-if(scuberGreetingForFeet<=400){
-  console.log("This one is o me");
+function scuberGreetingForFeet(feet){
+  if(feet<=400){
+    return'This one is on me!';
+  }
+  else if(feet > 400 && feet < 2000){
+    return 'That will be twenty bucks.';
+  }
+  else if(feet > 2000 && feet < 2500 ){
+    return 'I will gladly take your thirty bucks.';
+  }
+  else if(feet>=2500){
+    return'No can do.';
+  }
 }
-let scuberGreetingForFeet=1500;
-else if(scuberGreetingForFeet>2000)
-{
-  console.log("i will gladly take your thirty bucks");
-}
-let scuberGreetingForFeet=2501;
-else if(scuberGreetingForFeet> 2500)
-  [
-    console.log('Ok, sounds good.')
-  ]
-}
+scuberGreetingForFeet(4000);
 
-function ternaryCheckCity(){
-let city=NYC;
-city=NYC ? "Ok, sounds good.": "No go.";
+function ternaryCheckCity(city){
+if(city=="NYC"){
+  return "Ok, sounds good.";
 }
+else{
+  return "No go.";
+}
+}
+ternaryCheckCity("Pittibruh");
 
-function switchOnCharmFromTip(){
-let switchOnCharmFromTip="generous";
-let output;
-switch (switchOnCharmFromTip){
-  case generous:
-    output="Thank you so much";
-    break;
-    case not as generous:
-      output="Thank you";
-      break;
-      case thanks for everything:
-        output="Bye";
+function switchOnCharmFromTip(tip){
+    switch(tip){
+      case "generous":
+        return "Thank you so much.";
         break;
-    
-}
+        case "not as generous":
+          return "Thank you.";
+          break;
+          default:
+            return "Bye.";
+    }
 }
